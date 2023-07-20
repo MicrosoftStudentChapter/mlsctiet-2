@@ -1,0 +1,23 @@
+
+.react-multiple-carousel__arrow--left {
+  left: calc(1.5%) !important;
+  background: black !important;
+  z-index: 2;
+  opacity: 0.5 !important;
+  margin-bottom: 7vh;
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(6%) !important;
+  background: black !important;
+  opacity: 0.5 !important;
+  margin-bottom: 7vh;
+}
+
+.react-multi-carousel-list {
+  width: 75vw !important;
+  height: 75vh !important;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}

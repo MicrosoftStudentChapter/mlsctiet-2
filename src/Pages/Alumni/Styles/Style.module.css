@@ -1,0 +1,166 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "Khyay";
+  src: url(../../../fonts/myanmar-khyay.ttf);
+}
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #0d1213;
+  padding-top: 80px;
+  color: white;
+}
+ 
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+ .firstContainer {  
+  margin-left: 29vh;
+  background-color: #0d1213;
+}  
+
+.im1{
+  display: flex;
+}
+.Dots{
+  z-index: 0;
+}
+.Cross{
+  padding-inline: 5rem;
+}
+.Arrow{
+  padding-inline-start: 2.5rem;
+}
+
+.Carousels{
+  z-index: 1;
+}
+
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d1213;
+}
+
+.Arrows{
+  padding-inline-start: 55rem;
+  transform: rotate(180deg);
+  
+}
+
+.Lines2{
+  position: relative;
+  transform: rotate(90deg);
+}
+.Broadline{
+ padding-top: 9rem;
+}
+.Alumni{
+  transform:rotate(-90deg);
+  font-family: 'Khyay';
+  font-weight: 700; 
+  font-size: 45px;
+  line-height: 139px; 
+  position: absolute;
+   margin-top: 26vh;
+   margin-left: -10vh;
+}
+
+.p{
+ padding-left: 4rem;
+ display:inline-flexbox;
+ font-size: 18px;
+ width: 50rem;
+ font-family: "poppins";
+ margin-left: 25vh;
+ margin-top: 7%;
+ line-height: 4vh;
+}
+
+.thirdContainer {
+  margin-left: -3rem;
+  margin-top: 18.2vh;
+  background-color: #0d1213;
+}
+
+.Squarcle{
+  margin-top: 10vh;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
+
+@media (max-width: 786px) {
+  .Alumni{
+    transform: rotate(360deg);
+    font-size: 2.5rem;
+    margin-left: 22vh;
+    margin-top: -4vh;
+  }
+  .p{
+    font-size: 1.25rem;
+    display: inline-flexbox;
+    width: 55vh;
+    margin-left: -2.5vh;
+    margin-top: 1.8vh;
+    line-height: 3vh;
+    text-align:justify;
+  }
+  .Squarcle,.Arrow,.Broadline,.Cross,.Dots{
+    display: none;
+  }
+  .Carousels{
+    margin-left: -112vh;
+    margin-top: 44vh;
+    width: 38vh;
+    height: auto;
+  }
+  .Lines{
+    display: none;
+  }
+  .container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .thirdContainer{
+    margin-left: -127vh !important;
+    margin-bottom: 1.5vh;
+    transform: rotate(180deg);
+    background-color: rgb(0,0,0,0) !important;
+  }
+  .container{
+    height: 100vh;
+  }
+}
+
+@media (min-width: 787px) and (max-width: 1180px) {
+  .firstContainer{
+    margin-left: -2vh;
+  }
+  .p{
+    margin-left: 15vh;
+  }
+  .thirdContainer{
+    margin-top: 10vh;
+  }
+  .container{
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+}

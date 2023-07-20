@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+  font-family: "Khyay";
+  src: url(../../../fonts/myanmar-khyay.ttf);
+}
+
+.buttons{
+  display: inline-flex;
+  flex-direction: column;
+  height: 17.6vh;
+  background-color: rgba(0,0,0,0);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  opacity: 90%;
+  font-family: "Poppins";
+  position: relative;
+  background-image: url("Polygon.png"); 
+  width: 18vh;
+  border: none;
+  align-items: center;  
+  justify-content: center; 
+  background-position: 10vh;
+  margin-bottom: -1.15rem;
+  transition: all 0.2s;
+}
+
+.blocks{
+  transform: rotate(-90deg); 
+  font-size: 4.0vh;
+  color: white;
+  margin-right: -12vh;  
+  text-align: center; 
+}
+
+.mAin{
+  margin-top: 0px;
+  justify-items: center; 
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons:focus{
+  background-image: url("pol.png"); 
+  transform: translateX(0rem) scale(1);  
+  height: 16vh;
+}
+.buttons{
+  margin-top: -0.7rem;
+  height: 16vh;
+}
+
+@media screen and (max-width: 786px) {
+  .buttons{
+    font-size: 1.5em;
+    height: 11.5vh !important; 
+    margin-right: 2vh;
+    background-image: url("../Assets/Group 97.png") !important;
+    margin-top: 0.9rem !important;
+    scale: 0.9 !important;
+  }
+  .buttons:focus{ 
+    transform: scale(1.2) !important;
+    opacity: 1;
+    transition: all 0.2s;
+  }
+  .blocks{
+    transform: rotate(90deg); 
+    color:white;
+    font-size: 3.0vh;
+    margin-right: -8vh;  
+    text-align: center; 
+  }
+  .yearbutton{
+    background-color: rgb(0,0,0,0);
+    
+  }
+ }
